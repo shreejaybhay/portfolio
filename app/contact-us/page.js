@@ -48,12 +48,12 @@ const ContactPage = () => {
     };
     return (
         <div>
-            <div className="h-[500px] w-full relative">
+            <div className="lg:h-[500px] h-[300px] sm:h-[350px] w-full relative">
                 <div className='absolute top-0 left-0 w-full h-full bg-black/20'></div>
                 <div className='absolute inset-0 flex flex-col items-center justify-center w-full h-full'>
-                    <h1 className='text-4xl font-bold uppercase '>Contacts</h1>
+                    <h1 className='text-4xl font-bold uppercase text-slate-200'>Contacts</h1>
                     <div className="text-sm breadcrumbs">
-                        <ul>
+                        <ul className='font-medium uppercase text-slate-200'>
                             <li><a href='/'>Home</a></li>
                             <li><a href='/contact-us'>Contact Us</a></li>
                         </ul>
@@ -71,7 +71,7 @@ const ContactPage = () => {
                     <h1 className='font-medium'>FIND US</h1>
                     <h1 className='mt-3 text-3xl font-medium'>CONTACT INFO</h1>
                 </div>
-                <div className='flex-col mt-20 sm:items-center sm:flex sm:flex-row'>
+                <div className='flex-col mt-20 sm:items-center sm:flex sm:flex-col md:flex md:flex-col lg:flex-row'>
                     <a href='tel:+918828620892' className='flex flex-col items-center justify-center gap-5 px-20 py-10 border cursor-pointer border-slate-400' >
                         <MdOutlinePhoneCallback size={24} />
                         +91 8769457283
@@ -89,10 +89,10 @@ const ContactPage = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-2'>
-                <div className='flex items-center justify-center'>
-                    <div className="flex items-center justify-end w-full h-screen mr-16 ">
-                        <div className=" w-[500px] p-6 shadow-lg bg-base-200 rounded-xl">
+            <div className='flex flex-col items-center justify-center w-full lg:grid-cols-2 lg:grid'>
+                <div className='w-full'>
+                    <div className="flex items-center justify-center w-full pr-10 my-20 lg:flex lg:items-center lg:justify-end">
+                        <div className=" w-[500px] p-6 shadow-lg bg-base-200 rounded-xl ">
                             <h2 className="mb-4 text-2xl font-semibold">Contact Us</h2>
                             <form onSubmit={null}>
                                 <div className="mb-4">
@@ -137,8 +137,8 @@ const ContactPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex items-center '>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60302.28348820761!2d72.9448448!3d19.156172799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1718137119586!5m2!1sen!2sin" width="500" height="506" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+                <div className='flex items-center pl-10'>
+                    <iframe className='rounded-xl' src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60302.28348820761!2d72.9448448!3d19.156172799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1718137119586!5m2!1sen!2sin" width="500" height="506" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
 

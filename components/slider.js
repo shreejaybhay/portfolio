@@ -55,7 +55,7 @@ const Slider = () => {
     };
 
     return (
-        <div className='relative h-screen overflow-hidden'>
+        <div className='relative overflow-hidden lg:h-screen md:h-[700px] h-[500px]'>
             {slides.map((slide, index) => (
                 <motion.div
                     className='flex items-center justify-center'

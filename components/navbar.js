@@ -10,7 +10,7 @@ const Navbar = () => {
                 <div className="flex items-stretch gap-2">
                     <div className='items-center hidden gap-2 sm:flex'>
                         <a href='/' className="btn btn-ghost rounded-btn">Home</a>
-                        <a className="btn btn-ghost rounded-btn">Blogs</a>
+                        <a href='/blogs' className="btn btn-ghost rounded-btn">Blogs</a>
                         <a className="btn btn-ghost rounded-btn">Books</a>
                         <a className="btn btn-ghost rounded-btn">Career</a>
                         <a className="btn btn-ghost rounded-btn">About Us</a>
@@ -26,7 +26,7 @@ const Navbar = () => {
                     </div>
                     <div className='flex items-center gap-2 sm:hidden'>
                         <a href='/' className="btn btn-ghost rounded-btn">Home</a>
-                        <a className="btn btn-ghost rounded-btn">Blogs</a>
+                        <a href='/blogs' className="btn btn-ghost rounded-btn">Blogs</a>
                         <a className="btn btn-ghost rounded-btn">Books</a>
                     </div>
                     <div className="w-full dropdown dropdown-end sm:hidden">

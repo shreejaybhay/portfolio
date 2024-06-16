@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global styles for the prose content */
+.prose {
+    color: #e5e7eb; /* Ensure text color is white */
+    background: #1f2937; /* Ensure background is dark */
+}
+
+.prose img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0; /* Margin around images */
+}
+
+.prose * {
+    color: inherit !important;
+    background: none !important;
+}
+.prose a {
+    color: #60A5FA !important; /* Link color */
+    text-decoration: underline;
+}
+
+/* Adjust heading and subheading colors */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+    color: rgb(243 244 246) !important; /* Heading color */
+}
