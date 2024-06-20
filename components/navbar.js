@@ -11,7 +11,7 @@ const Navbar = () => {
                     <div className='items-center hidden gap-2 sm:flex'>
                         <a href='/' className="btn btn-ghost rounded-btn">Home</a>
                         <a href='/blogs' className="btn btn-ghost rounded-btn">Blogs</a>
-                        <a className="btn btn-ghost rounded-btn">Books</a>
+                        <a href='/books' className="btn btn-ghost rounded-btn">Books</a>
                         <a className="btn btn-ghost rounded-btn">Career</a>
                         <a className="btn btn-ghost rounded-btn">About Us</a>
                     </div>
@@ -27,7 +27,7 @@ const Navbar = () => {
                     <div className='flex items-center gap-2 sm:hidden'>
                         <a href='/' className="btn btn-ghost rounded-btn">Home</a>
                         <a href='/blogs' className="btn btn-ghost rounded-btn">Blogs</a>
-                        <a className="btn btn-ghost rounded-btn">Books</a>
+                        <a href='/books' className="btn btn-ghost rounded-btn">Books</a>
                     </div>
                     <div className="w-full dropdown dropdown-end sm:hidden">
                         <div tabIndex={0} role="button" className="btn btn-ghost rounded-btn">All</div>
@@ -45,5 +45,4 @@ const Navbar = () => {
         </div>
     )
 }
-
 export default Navbar

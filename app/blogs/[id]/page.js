@@ -44,6 +44,10 @@ const BlogDetailPage = () => {
 
                 const sanitizedContent = sanitizeContent(item.content);
 
+                // Append the blog link to the sanitized content
+                const blogLink = `<p><a href="${item.url}" target="_blank" rel="noopener noreferrer">Read more on our blog</a></p>`;
+                const finalContent = sanitizedContent + blogLink;
+
                 const postDetails = {
                     title: item.title,
                     author: {
@@ -52,7 +56,7 @@ const BlogDetailPage = () => {
                     },
                     publishedDate: new Date(item.published).toLocaleDateString(),
                     featuredImg: firstImgUrl,
-                    content: sanitizedContent
+                    content: finalContent
                 };
 
                 setPost(postDetails);

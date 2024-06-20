@@ -89,9 +89,9 @@ const ContactPage = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col items-center justify-center w-full lg:grid-cols-2 lg:grid'>
+            <div className='flex flex-col items-center justify-center w-full p-4 lg:grid-cols-2 lg:grid sm:p-0'>
                 <div className='w-full'>
-                    <div className="flex items-center justify-center w-full pr-10 my-20 lg:flex lg:items-center lg:justify-end">
+                    <div className="flex items-center justify-center w-full my-20 sm:pr-10 lg:flex lg:items-center lg:justify-end">
                         <div className=" w-[500px] p-6 shadow-lg bg-base-200 rounded-xl ">
                             <h2 className="mb-4 text-2xl font-semibold">Contact Us</h2>
                             <form onSubmit={null}>
@@ -137,8 +137,8 @@ const ContactPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex items-center pl-10'>
-                    <iframe className='rounded-xl' src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60302.28348820761!2d72.9448448!3d19.156172799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1718137119586!5m2!1sen!2sin" width="500" height="506" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+                <div className='flex items-center sm:pl-10'>
+                    <iframe className='rounded-xl w-[340px] h-[500px] sm:w-[500px] sm:-[506px]' src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60302.28348820761!2d72.9448448!3d19.156172799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1718137119586!5m2!1sen!2sin" width="500" height="506" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
 
