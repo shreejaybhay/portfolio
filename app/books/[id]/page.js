@@ -25,10 +25,10 @@ const BookDetailPage = () => {
     }
 
     return (
-        <div className="min-h-screen p-4 text-gray-100 bg-gray-900">
+        <div className="min-h-screen p-4 text-gray-100 bg-base-100">
         
             <div className="max-w-6xl mx-auto">
-                <div className="flex flex-col p-4 mt-20 bg-gray-800 rounded-lg md:p-10 md:flex-row">
+                <div className="flex flex-col p-4 mt-20 rounded-lg bg-neutral md:p-10 md:flex-row">
                     {/* Left side - Book cover */}
                     <div className="flex justify-center mb-4 md:w-1/2 md:mb-0">
                         <img src={book.coverImage} alt={book.title} className="object-cover w-full max-w-md rounded-lg shadow-lg" />

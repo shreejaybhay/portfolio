@@ -37,7 +37,7 @@ const BlogsPage = () => {
     }, []);
 
     return (
-        <div className="min-h-screen text-white bg-gray-900">
+        <div className="min-h-screen text-white bg-base-100">
             {/* Hero Section */}
             <div className="relative">
                 <img
@@ -46,15 +46,22 @@ const BlogsPage = () => {
                     className="object-cover object-center w-full h-[400px] lg:h-[500px] sm:h-[350px]"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-                    <div className="text-center">
+                    <div className="flex flex-col items-center justify-center text-center">
                         <h1 className="text-4xl font-bold uppercase lg:text-6xl">Blogs</h1>
                         <p className="mt-2 text-sm lg:text-base">Explore our latest blog posts</p>
+                        <div className="text-sm breadcrumbs">
+                            <ul className='font-medium uppercase text-slate-200'>
+                                <li><a href='/'>Home</a></li>
+                                <li><a href='/blogs'>Blogs</a></li>
+                            </ul>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
             {/* Blog Posts Section */}
-            <div className="min-h-screen text-white bg-gray-900">
+            <div className="min-h-screen text-white bg-base-100">
                 {/* Hero Section */}
                 {/* ... Your existing hero section code ... */}
 
@@ -65,7 +72,7 @@ const BlogsPage = () => {
                             <p>Loading...</p>
                         ) : (
                             posts.map((post) => (
-                                <Link href={`/blogs/${post.id}`} key={post.id} className="overflow-hidden bg-gray-800 rounded-lg shadow-lg">
+                                <Link href={`/blogs/${post.id}`} key={post.id} className="overflow-hidden rounded-lg shadow-lg bg-neutral">
                                     <img
                                         src={post.firstImgUrl}
                                         alt="blog cover"
@@ -82,7 +89,7 @@ const BlogsPage = () => {
                                                 href={post.id}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="text-blue-400 hover:underline"
+                                                className="text-base-content hover:underline"
                                             >
                                                 Read more
                                             </a>

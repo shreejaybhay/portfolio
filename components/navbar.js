@@ -12,7 +12,7 @@ const Navbar = () => {
                         <a href='/' className="btn btn-ghost rounded-btn">Home</a>
                         <a href='/blogs' className="btn btn-ghost rounded-btn">Blogs</a>
                         <a href='/books' className="btn btn-ghost rounded-btn">Books</a>
-                        <a className="btn btn-ghost rounded-btn">Career</a>
+                        <a href='/career' className="btn btn-ghost rounded-btn">Career</a>
                         <a className="btn btn-ghost rounded-btn">About Us</a>
                     </div>
                     <div className="hidden dropdown dropdown-end sm:inline-block">
@@ -32,7 +32,7 @@ const Navbar = () => {
                     <div className="w-full dropdown dropdown-end sm:hidden">
                         <div tabIndex={0} role="button" className="btn btn-ghost rounded-btn">All</div>
                         <ul tabIndex={0} className="menu dropdown-content z-[2] p-2 shadow bg-base-100 rounded-box w-64 mt-4">
-                            <li><a>Career</a></li>
+                            <li><a href='/career'>Career</a></li>
                             <li><a>About Us</a></li>
                             <li><a href='/contact-us'>Contact Us </a></li>
                             <li><a>Photo Gallery</a></li>

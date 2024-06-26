@@ -81,8 +81,8 @@ const BlogDetailPage = () => {
 
     return (
         <div className="w-full">
-            <div className="min-h-screen p-4 text-gray-100 bg-gray-900">
-                <div className="max-w-4xl mx-auto overflow-hidden bg-gray-800 rounded-lg shadow-lg">
+            <div className="min-h-screen p-4 text-gray-100 bg-base-100">
+                <div className="max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg bg-neutral">
                     <img src={post.featuredImg} alt="Featured" className="object-cover w-full h-64" />
                     <div className="p-6">
                         <h1 className="mb-4 text-4xl font-bold text-gray-200 sm:text-5xl md:text-6xl">{post.title}</h1>

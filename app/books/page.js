@@ -13,7 +13,7 @@ const truncateText = (text, maxLength) => {
 
 const BooksPage = () => {
     return (
-        <div className="min-h-screen text-gray-100 bg-gray-900">
+        <div className="min-h-screen text-gray-100 bg-base-100">
             <div className="relative">
                 <img
                     src="https://images.pexels.com/photos/3747465/pexels-photo-3747465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -21,9 +21,15 @@ const BooksPage = () => {
                     className="object-cover object-center w-full h-[400px] lg:h-[500px] sm:h-[350px]"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-                    <div className="text-center">
+                    <div className="flex flex-col items-center justify-center text-center">
                         <h1 className="text-4xl font-bold uppercase lg:text-6xl">Books</h1>
                         <p className="mt-2 text-sm lg:text-base">Explore our latest books posts</p>
+                        <div className="text-sm breadcrumbs">
+                            <ul className='font-medium uppercase text-slate-200'>
+                                <li><a href='/'>Home</a></li>
+                                <li><a href='/books'>Books</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -31,7 +37,7 @@ const BooksPage = () => {
                 <div className="grid grid-cols-1 gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3">
                     {books.map((book) => (
                         <Link key={book.id} href={`/books/${book.id}`}>
-                            <div className="block h-full p-4 transition bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700">
+                            <div className="block h-full p-4 transition rounded-lg shadow-lg bg-neutral hover:bg-gray-700">
                                 <img src={book.coverImage} alt={book.title} className="object-cover w-full mb-4 rounded" />
                                 <h1 className="mb-2 text-xl font-semibold text-gray-200">{book.title}</h1>
                                 <p className="mb-2 text-gray-400">by {book.author}</p>
